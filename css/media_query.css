@@ -1,0 +1,158 @@
+/* Responive media queries */
+@media screen and (max-width: 499px) {
+  .form{
+    padding: 20px;
+  }
+  .form header{
+    text-align: center;
+  }
+  
+  .section-padding{
+    margin-bottom: 350px;
+  }
+  .quotescontainer {
+    width: 400px;
+    height: 450px;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 659px) {
+
+  :root {
+    --fs-1: 48px;
+    --fs-2: 30px;
+  }
+
+  .section-padding { 
+    padding: 80px 20px; 
+    margin-bottom: 350px;
+  }
+
+  /* HEADER | NAVIGATION SECTION */
+
+  .nav { 
+    padding: 100px 16%; 
+  }
+
+  /* INTRO SECTION */
+
+  .intro { 
+    padding: 80px 15%; 
+  }
+  
+  /* FEELING SECTION */
+
+  .feeling-padding { padding: 80px 20px; }
+
+}
+
+
+@media (min-width: 660px) and (max-width: 767px){
+
+  /* GRATITUDE SECTION */
+
+  .gratitudewrapper{
+    margin: 15px;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+  .popup-box .popup{
+    max-width: calc(100% - 15px);
+  }
+  .bottom-content .settings i{
+    font-size: 17px;
+  }
+  .section-padding{
+    margin-bottom: 350px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  :root { --fs-4: 30px; }
+
+  /* INTRO SECTION */
+
+  .intro { 
+    padding: 80px 20%; 
+  }
+  .section-padding{
+    margin-bottom: 350px;
+  }
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+  /* HEADER | NAVIGATION SECTION */
+
+  .container {
+    display:        flex;
+    flex-direction: row-reverse;
+  }
+
+  .section-padding { padding: 80px 50px; }
+
+  .nav { 
+    padding: 100px 50px; 
+  }
+
+  .nav-header {
+    width: 40%;
+    height: 100vh;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+    border-left: 1px solid hsla(100, 100%, 100%, 0.2);
+  }
+
+
+  /* INTRO SECTION */
+
+  .intro { padding: 80px 30%; }
+
+  .form header{
+    margin-bottom: -60px;
+  }
+
+
+  .feeling-padding { padding: 80px 50px; }
+
+  .form-header {
+    width: 40%;
+    height: 100vh;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+    border-left: 1px solid hsla(100, 100%, 100%, 0.2);
+  }
+  
+  /* MAIN */
+
+  main {
+    width:  60%;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
+
+ /* SCROLLBAR */
+
+  ::-webkit-scrollbar { width: 6px; }
+
+  ::-webkit-scrollbar-thumb { background: hsla(120, 53%, 90%, 0.2); }
+
+  ::-webkit-scrollbar-track { background: rgb(85, 67, 67); }
+
+  ::-webkit-scrollbar-track:hover { background: hsla(0, 93%, 44%, 0.05); }
+
+
+}

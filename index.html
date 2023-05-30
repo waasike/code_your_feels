@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salubrious</title>
+
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- css link -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media_query.css">
+
+  <!-- google font link -->
+
+  <link href="https://fonts.googleapis.com/css?family=Jost:regular,500,800" rel="stylesheet" />
+
+  <!-- Iconscout Link For Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER SECTION -->
+
+    <header class="nav-header">
+
+      <!-- navbar toggle open button -->
+
+      <button class="menu-open-btn">
+        <span>Menu</span>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="nav">
+
+        <button class="menu-close-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <h4 class="nav-heading">Menu</h4>
+        <ul>
+
+          <li class="nav-item">
+            <a href="#feeling" class="nav-link">How are you feeling?</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gratitude" class="nav-link">Gratitude Board</a>
+          </li>
+          <li class="nav-item">
+            <a href="#quotes" class="nav-link">Mental Health Quotes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#playlist" class="nav-link">Mood Playlist</a>
+          </li>
+          <li class="nav-item">
+            <a href="mental.html" class="nav-link" target="_blank">Learn More</a>
+          </li>
+
+        </ul>
+
+
+        <div class="nav-footer">
+
+          <p>Developed by <a href="https://www.linkedin.com/in/mitchelle-wasike-62b99123b/" class="link-underline" target="_blank">Mitchelle
+              Wasike</a></p>
+
+        </div>
+
+      </nav>
+
+
+      <!--INTRO SECTION-->
+
+      <section class="intro section-padding">
+
+        <div class="intro-profile">
+
+          <div class="intro-border one"></div>
+          <div class="intro-border two"></div>
+
+
+          <div class="text-container">
+            <span class="text first-text">Mental Health is </span>
+            <span class="text sec-text"></span>
+          </div>
+
+        </div>
+
+        <a href="mental.html" class="intro-link" target="_blank">
+          <span class="circle"></span>
+          <span class="link-underline">Learn more about Mental Health illnesses</span>
+        </a>
+
+      </section>
+
+    </header>
+
+    <main>
+
+      <!-- FEELING SECTION -->
+
+      <section class="feeling-padding" id="feeling">
+
+        <h3 class="feeling-subtitle">Small steps are also progress 🤍</h3>
+        <h2 class="feeling-title">Salubrious</h2>
+        <div class="feeling-wrapper" id="inputContainer">
+          <section class="form">
+            <header class="form-header">How are you feeling today?</header>
+            <div class="text-container">
+              <div class="field input">
+                <label id="feeling-label">Are you feeling 'happy' or 'sad' ?</label>
+                <input type="text" id="userInput" placeholder="" required>
+              </div>
+              <div class="field button">
+                <button onclick="checkMood()">Submit</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div id="animationContainer">
+          <img id="happyAnimation" src="gifs\happy.gif">
+          <p id="feelingText">That's Great to hear! Keep prioritizing your mental health and be kind and compassionate
+            to yourself 🤍</p>
+        </div>
+        <div id="animationContainer2">
+          <img id="sadAnimation" src="gifs\sad.gif">
+          <p id="feelingText">It's okay to feel unhappy at times just remember you are enough! and the fact that you
+            showed up today is enough. Sending love and light your way 💚</p>
+        </div>
+        <div id="errorText">
+          <p id="warning">Invalid Entry. Please refresh and input either happy or sad to view your animation.</p>
+        </div>
+
+      </section>
+
+      <!-- GRATITUDE SECTION -->
+
+      <section id="gratitude">
+        <h2 id="gratitudeheader">Gratitude Journal</h2>
+
+        <div class="gratitude-card">
+          <div class="card-body">
+            <p class="content-description">
+              Gratitude is a mindset and an intentional practice that can have
+              profound effects on our mental health and overall well-being. When we
+              cultivate gratitude, it shifts our focus from what might be lacking or
+              negative in our lives to what is present and positive.
+            </p>
+          </div>
+        </div>
+
+        <div class="popup-box">
+          <div class="popup">
+            <div class="gratitudecontent">
+              <header class="gratitudeheader">
+                <p id="gratitudeheaderp"></p>
+                <i class="uil uil-times" id="gratitudeheaderi"></i>
+              </header>
+              <form class="gratitudeform">
+                <div class="row title">
+                  <label>Category <small>e.g family</small></label>
+                  <input type="text" spellcheck="false">
+                </div>
+                <div class="row description">
+                  <label>Description</label>
+                  <textarea spellcheck="false"></textarea>
+                </div>
+                <button class="gratitudeButton"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="gratitudewrapper">
+          <li class="add-box">
+            <div class="icon"><i class="uil uil-plus"></i></div>
+            <p>What are you grateful for?</p>
+          </li>
+        </div>
+      </section>
+
+
+      <!-- QUOTES SECTION -->
+
+      <section id="quotes">
+        <h2 id="quotesheader">Mental Health Quotes</h2>
+
+        <div class="quotes-card">
+          <div class="card-body">
+            <p class="content-description">
+              Mental Health quotes are insightful statements that provide encouragement and wisdom
+              regarding mental health and well-being.
+              They often encapsulate profound truths or share personal experiences that resonate with individuals facing
+              mental health challenges and provide a sense of validation.
+            </p>
+          </div>
+        </div>
+
+        <div class="quotescontainer">
+
+          <div class="quotes-content">
+
+            <div class="text-area">
+              <span class="quote">"Being able to be your true self is one of the strongest components of good mental
+                health"</span>
+            </div>
+
+            <div class="writer">– Dr. Lauren Fogel</div>
+
+            <div class="button-area">
+              <div class="btn">
+                <button id="Qbtn">New Quote</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- PLAYLIST SECTION -->
+
+      <section id="playlist">
+        <h2 id="playlistheader">Music Playlist</h2>
+
+        <div class="playlist-card">
+          <div class="card-body">
+            <p class="content-description">
+              Music is a powerful and universal language that has the ability to evoke emotions, uplift spirits, and
+              profoundly impact our mental health and well-being. Here are some songs to cheer you up and boost your mood. Enjoy!
+            </p>
+          </div>
+        </div>
+
+        <audio id="audioPlayer" controls>
+          <source id="audioSource" src="" type="audio/mpeg">
+        </audio>
+
+        <ul>
+          <li>
+            <div class="activities-card">
+
+              <div class="card-icon">
+                <ion-icon name="play"></ion-icon>
+              </div>
+
+              <div>
+                <a href="#" onclick="playSong('likeyou.mp3')">
+                  <h3 class="h3 card-title">
+                    Tatiana Manaois - Like You
+                  </h3>
+                </a>
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <div class="activities-card">
+
+              <div class="card-icon">
+                <ion-icon name="play"></ion-icon>
+              </div>
+
+              <div>
+                <a href="#" onclick="playSong('countonme.mp3')">
+                  <h3 class="h3 card-title">
+                    Bruno Mars - Count on Me
+                  </h3>
+                </a>
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <div class="activities-card">
+
+              <div class="card-icon">
+                <ion-icon name="play"></ion-icon>
+              </div>
+
+              <div>
+                <a href="#" onclick="playSong('peterpan.mp3')">
+                  <h3 class="h3 card-title">
+                    Anson Seabra - Peter Pan
+                  </h3>
+                </a>
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <div class="activities-card">
+
+              <div class="card-icon">
+                <ion-icon name="play"></ion-icon>
+              </div>
+
+              <div>
+                <a href="#" onclick="playSong('dontgiveup.mp3')">
+                  <h3 class="h3 card-title">
+                    Andy Grammer - Don't Give Up
+                  </h3>
+                </a>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+
+      <!-- GAME SECTION -->
+
+      <section id="game">
+        <h2 id="gameheader">Snake Game</h2>
+
+        <div class="game-card">
+          <div class="card-body">
+            <p class="content-description">
+              Engaging in games provides stress reduction, relaxation, emotional regulation and expression that
+              contribute to cognitive, emotional, and social aspects of our mental well-being.
+            </p>
+          </div>
+        </div>
+
+        <h2 id="game-title">Interested in playing a snake game on your laptop | PC ? Play now!</h2>
+        <h3 id="warning2">Sorry! The Snake Game is not available on smaller screens. Please access the website on a
+          laptop screen to enjoy the game! </h3>
+        <div id="game-container">
+          <video src="video\snake.mp4" muted loop autoplay></video>
+
+          <a href="game.html" class="game-button" target="_blank">
+            <span class="game-span">Play Now</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- custom js link -->
+
+  <script src="js/script.js"></script>
+
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
