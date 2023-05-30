@@ -29,11 +29,11 @@ Hosting Platforms
 ✵ Display a blog containing mental health content for users to view (Learn More Section)
 
 ### ⦿ Image of Salibrous <br>
-<img align="left" src="readme-images\feelings-sec.png" width="430px">
-<img align="right" src="readme-images\gratitude-sec.png" width="430px">
-<img align="left" src="readme-images\quotes-sec.png" width="430px">
-<img align="right" src="readme-images\playlist-sec.png" width="430px"> 
-<img align="left" src="readme-images\game-sec.png" width="430px"> <br>
+<img src="readme-images\feelings-sec.png" width="430px">
+<img src="readme-images\gratitude-sec.png" width="430px">
+<img src="readme-images\quotes-sec.png" width="430px">
+<img src="readme-images\playlist-sec.png" width="430px"> 
+<img src="readme-images\game-sec.png" width="430px"> <br>
 
 ### ⦿ Live View of Salubrious <br>
 [Salubrious Website | App Live View on Netlify]() or [Salubrious Website | App Live View on Github Pages]()
