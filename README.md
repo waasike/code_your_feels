@@ -25,7 +25,7 @@ Hosting Platforms
 ✵ Display, add, edit & delete Gratitude list (Gratitude Section) <br>
 ✵ Display random & encouraging Mental Health Quotes to the user (Quotes Section) <br>
 ✵ Ability for users to play a list of available soothing music { play, pause, fast-foward, rewind, add volume, reduce volume and download song } (Playlist Section) <br>
-✵ Ability for users to play a snake game on their laptop/PC (Game Section)
+✵ Ability for users to play a snake game on their laptop/PC (Game Section) <br>
 ✵ Display a blog containing mental health content for users to view (Learn More Section)
 
 ### ⦿ Image of Salibrous <br>
