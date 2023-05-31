@@ -36,7 +36,7 @@ Hosting Platforms
 <img src="readme-images\game-sec.png" width="430px"> <br>
 
 ### ⦿ Live View of Salubrious <br>
-[Salubrious Website | App Live View on Netlify]() or [Salubrious Website | App Live View on Github Pages]()
+[Salubrious Website | App Live View on Netlify](https://salubrious.netlify.app/) or [Salubrious Website | App Live View on Github Pages](https://waasike.github.io/code_your_feels/)
 
 ### Interact with me 
 
